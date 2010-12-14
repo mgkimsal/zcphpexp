@@ -2,8 +2,8 @@
 
 function __autoload($f) {
 	$t = str_replace("\\","/",$f);
-	echo "include $t.php";
-	die();
+//	echo "including $t.php";
+  include($t.".php");
 }
 
 //$name = new User();
