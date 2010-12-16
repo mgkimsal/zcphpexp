@@ -4,6 +4,7 @@ include("bootstrap.php");
 
 
 // test 1
+
 $deck = new Deck();
 assert(count($deck->getCards())==52);
 
@@ -52,3 +53,11 @@ assert($p->isBust()==false);
 $p->giveCard(new Card("S","J"));
 assert($p->getHandValue()==22);
 assert($p->isBust());
+
+
+$c = new Card("D","9");
+assert($c->getImageNumber()==24);
+$c = new Card("C","8");
+assert($c->getImageNumber()==25);
+$c = new Card("C","9");
+assert($c->getImageNumber()==21);

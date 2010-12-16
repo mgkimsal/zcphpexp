@@ -68,4 +68,15 @@ class player
     return false;
   }
 
+
+  public function renderHand()
+  {
+    foreach($this->hand as $c)
+    {
+      echo "<div class='card'>\n";
+      echo "<img src='".$c->getImage()."'/>\n";
+      echo "</div>\n";
+    }
+
+  }
 }

@@ -16,7 +16,7 @@ class Deck {
 
     foreach($suits as $suit) {
       foreach($values as $k=>$v){
-        $cards[] = new Card($suit, $value);
+        $cards[] = new Card($suit, $v);
       }
     }
     shuffle($cards);

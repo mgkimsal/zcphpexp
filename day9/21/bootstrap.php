@@ -1,8 +1,8 @@
 <?php
+ob_start();
 // bootstrap process
 // set up anything that needs to be set up here
 
-session_start();
 define('DS', DIRECTORY_SEPARATOR);
 define('PS', PATH_SEPARATOR);
 define('BASE_DIR', dirname(__FILE__).DS);
@@ -15,4 +15,5 @@ function __autoload($class)
   include($class);
 }
 
+session_start();
 
